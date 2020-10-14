@@ -6,8 +6,13 @@
     <string name="main_description">Android Programmer</string>
     <string name="main_start">→</string>
 
-    <string name="menu_emoji">내 정보</string>
+    <string name="menu_introduce">프로필</string>
     <string name="menu_skill">스킬</string>
     <string name="menu_android">개발</string>
-    <string name="menu_info">앱 정보</string>
+    <string name="menu_info">정보</string>
+
+    <string name="content_profile">Profile</string>
+    <string name="content_skill">Programming Skill</string>
+    <string name="content_android">Android Developed</string>
+    <string name="content_info">Application Information</string>
 </resources>

@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/emoji"
+        android:id="@+id/introduce"
         android:icon="@drawable/sdb_navigation_emoji"
-        android:title="@string/menu_emoji"/>
+        android:title="@string/menu_introduce"/>
 
     <item
         android:id="@+id/skill"

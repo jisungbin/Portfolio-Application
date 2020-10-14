@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
-    app:startDestination="@id/emoji">
+    app:startDestination="@id/introduce">
 
     <fragment
-        android:id="@+id/emoji"
+        android:id="@+id/introduce"
         android:name="me.sungbin.portfolio.fragment.EmojiFragment"
-        android:label="EmojiFragment" />
+        android:label="IntroduceFragment" />
 
     <fragment
         android:id="@+id/skill"
