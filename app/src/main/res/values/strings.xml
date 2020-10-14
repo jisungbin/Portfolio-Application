@@ -18,16 +18,22 @@
     <string name="content_android">Developed</string>
     <string name="content_information">App Information</string>
 
-    <string name="introduce_name">지성빈</string>
+
     <string name="introduce_title_name">이름</string>
+    <string name="introduce_name">지성빈</string>
     <string name="introduce_title_birthday">생일</string>
     <string name="introduce_birthday">2002년 12월 02일</string>
     <string name="introduce_title_age">나이</string>
+    <string name="introduce_age">19살</string>
     <string name="introduce_title_mail">메일</string>
     <string name="introduce_mail">mail@sungbin.me</string>
     <string name="introduce_title_site">개인 사이트</string>
     <string name="introduce_site">devl.es\nsungbin.me\ngithub.com/sungbin5304</string>
     <string name="introduce_title_bio">소개</string>
     <string name="introduce_bio">초등학교 6학년 때 자바스크립트로 프로그래밍에 입문하였고, 중학교 2학년 때 안드로이드 프로그래밍을 시작하였다.\n\n안드로이드 프로그래머를 꿈꾸고 있다.</string>
+
+    <string name="skill_title_usable_language">사용가능 언어</string>
+    <string name="skill_usable_language">자바\n코틀린💙\n자바스크립트</string>
+    <string name="skill_learning_language">배우고있는 언어</string>
 
 </resources>

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:overScrollMode="never"
-    android:scrollbars="none"
     android:paddingStart="@dimen/margin_default"
+    android:paddingTop="@dimen/margin_default"
     android:paddingEnd="@dimen/margin_default"
-    android:paddingTop="@dimen/margin_default">
+    android:scrollbars="none">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -84,7 +84,7 @@
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title_age"
-            tools:text="19살" />
+            tools:text="@string/introduce_age" />
 
         <TextView
             android:id="@+id/tv_title_email"
