@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
+    app:startDestination="@id/emoji">
+
+    <fragment
+        android:id="@+id/emoji"
+        android:name="me.sungbin.portfolio.fragment.EmojiFragment"
+        android:label="EmojiFragment" />
+
+    <fragment
+        android:id="@+id/skill"
+        android:name="me.sungbin.portfolio.fragment.SkillFragment"
+        android:label="SkillFragment" />
+
+    <fragment
+        android:id="@+id/android"
+        android:name="me.sungbin.portfolio.fragment.AndroidFragment"
+        android:label="AndroidFragment" />
+
+    <fragment
+        android:id="@+id/info"
+        android:name="me.sungbin.portfolio.fragment.InfoFragment"
+        android:label="InfoFragment" />
+
+
+</navigation>

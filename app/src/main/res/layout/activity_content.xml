@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBackgroundWhite"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/cv_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_main" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_default"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/sbb_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:activeItem="0"
+            app:backgroundColor="@color/colorWhite"
+            app:iconTint="@color/colorTwiceLightGray"
+            app:iconTintActive="@color/colorPrimary"
+            app:itemFontFamily="@font/nanumgothic"
+            app:menu="@menu/menu_navigation"
+            app:textColor="@color/colorPrimary" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

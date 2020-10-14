@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/emoji"
+        android:icon="@drawable/sdb_navigation_emoji"
+        android:title="@string/menu_emoji"/>
+
+    <item
+        android:id="@+id/skill"
+        android:icon="@drawable/sdb_navigation_whatshot"
+        android:title="@string/menu_skill"/>
+
+    <item
+        android:id="@+id/android"
+        android:icon="@drawable/sdb_navigation_android"
+        android:title="@string/menu_android"/>
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/sdb_navigation_info"
+        android:title="@string/menu_info"/>
+
+</menu>

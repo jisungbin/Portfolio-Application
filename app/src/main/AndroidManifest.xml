@@ -11,12 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.FullScreen">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:theme="@style/AppTheme.WhiteStatusBar"
+            android:name=".activity.ContentActivity" />
 
         <meta-data
             android:name="com.samsung.android.icon_container.has_icon_container"

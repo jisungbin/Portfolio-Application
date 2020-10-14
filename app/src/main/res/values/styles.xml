@@ -11,7 +11,7 @@
         <item name="android:fontFamily">@font/nanumgothic</item>
     </style>
 
-    <style name="AppTheme.NoActionBar.WhiteStatusBar" parent="AppTheme.NoActionBar">
+    <style name="AppTheme.WhiteStatusBar" parent="AppTheme">
         <item name="android:statusBarColor">@color/colorBackgroundWhite</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
