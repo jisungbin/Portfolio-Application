@@ -30,6 +30,7 @@ object Versions {
     }
 
     object Ui {
+        const val ReflowAnimator = "1.0.0-SNAPSHOT"
         const val SmoothBottomBar = "1.7.6"
         const val Lottie = "3.4.4"
         const val Material = "1.2.1"
@@ -61,6 +62,8 @@ object Dependencies {
     }
 
     object Ui {
+        const val ReflowAnimator =
+            "com.shazam:android-reflow-animator:${Versions.Ui.ReflowAnimator}"
         const val SmoothBottomBar =
             "com.github.ibrahimsn98:SmoothBottomBar:${Versions.Ui.SmoothBottomBar}"
         const val Lottie = "com.airbnb.android:lottie:${Versions.Ui.Lottie}"
