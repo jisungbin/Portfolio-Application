@@ -1,4 +1,4 @@
-package me.sungbin.portfolio.activity
+package me.sungbin.portfolio.ui.activity
 
 import android.os.Bundle
 import android.view.Menu
@@ -15,12 +15,12 @@ class ContentActivity : AppCompatActivity() {
     }
 
     private val listener = NavController.OnDestinationChangedListener { controller, _, _ ->
-        with(tv_title) {
+        with(tv_hello) {
             when (controller.currentDestination?.id) {
                 R.id.introduce -> text = getString(R.string.content_profile)
                 R.id.skill -> text = getString(R.string.content_skill)
                 R.id.android -> text = getString(R.string.content_android)
-                R.id.info -> text = getString(R.string.content_info)
+                R.id.info -> text = getString(R.string.content_information)
             }
         }
     }

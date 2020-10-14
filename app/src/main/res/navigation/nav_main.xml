@@ -5,22 +5,22 @@
 
     <fragment
         android:id="@+id/introduce"
-        android:name="me.sungbin.portfolio.fragment.EmojiFragment"
+        android:name="me.sungbin.portfolio.ui.fragment.IntroduceFragment"
         android:label="IntroduceFragment" />
 
     <fragment
         android:id="@+id/skill"
-        android:name="me.sungbin.portfolio.fragment.SkillFragment"
+        android:name="me.sungbin.portfolio.ui.fragment.SkillFragment"
         android:label="SkillFragment" />
 
     <fragment
         android:id="@+id/android"
-        android:name="me.sungbin.portfolio.fragment.AndroidFragment"
+        android:name="me.sungbin.portfolio.ui.fragment.AndroidFragment"
         android:label="AndroidFragment" />
 
     <fragment
         android:id="@+id/info"
-        android:name="me.sungbin.portfolio.fragment.InfoFragment"
+        android:name="me.sungbin.portfolio.ui.fragment.InformationFragment"
         android:label="InfoFragment" />
 
 

@@ -1,11 +1,9 @@
-package me.sungbin.portfolio.fragment
+package me.sungbin.portfolio.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.test_fragment.*
 import me.sungbin.portfolio.R
 
 
@@ -19,11 +17,6 @@ class SkillFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = inflater.inflate(R.layout.test_fragment, container, false)!!
+    ) = inflater.inflate(R.layout.fragment_skill, container, false)!!
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        tv_test.text = "SkillFragment"
-    }
 }

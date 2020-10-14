@@ -1,4 +1,4 @@
-package me.sungbin.portfolio.activity
+package me.sungbin.portfolio.ui.activity
 
 import android.os.Bundle
 import android.view.WindowManager
