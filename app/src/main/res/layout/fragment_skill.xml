@@ -38,11 +38,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/skill_learning_language"
+            android:text="@string/skill_title_learning_language"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_love_language" />
+
+        <TextView
+            android:id="@+id/tv_learning_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_half"
+            android:text="@string/skill_learning_language"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_learning_language" />
+
+        <TextView
+            android:id="@+id/tv_title_dev_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_twice"
+            android:text="@string/skill_title_dev_skill"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_learning_language" />
+
+        <TextView
+            android:id="@+id/tv_dev_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_half"
+            android:text="@string/skill_dev_skill"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_dev_skill" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
