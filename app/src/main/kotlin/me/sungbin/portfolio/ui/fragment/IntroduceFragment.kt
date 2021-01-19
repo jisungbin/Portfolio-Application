@@ -5,12 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.sungbin.sungbintool.extensions.plusAssign
-import kotlinx.android.synthetic.main.fragment_introduce.*
-import me.sungbin.portfolio.R
+import me.sungbin.portfolio.databinding.FragmentIntroduceBinding
 import java.text.SimpleDateFormat
 import java.util.*
-
 
 /**
  * Created by SungBin on 2020-09-10.
@@ -18,11 +15,13 @@ import java.util.*
 
 class IntroduceFragment : Fragment() {
 
+    private val binding by lazy { FragmentIntroduceBinding.inflate(layoutInflater) }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ) = inflater.inflate(R.layout.fragment_introduce, container, false)!!
+        savedInstanceState: Bundle?,
+    ) = binding.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -30,6 +29,5 @@ class IntroduceFragment : Fragment() {
         val format = SimpleDateFormat("yyyy", Locale.KOREA)
         val year = format.format(Date()).toInt()
         val age = year - 2002 + 1
-        tv_age += "${age}살"
     }
 }

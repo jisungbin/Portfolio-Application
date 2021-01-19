@@ -4,8 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import me.sungbin.portfolio.R
-
+import me.sungbin.portfolio.databinding.FragmentSkillBinding
 
 /**
  * Created by SungBin on 2020-09-10.
@@ -13,10 +12,11 @@ import me.sungbin.portfolio.R
 
 class SkillFragment : Fragment() {
 
+    private val binding by lazy { FragmentSkillBinding.inflate(layoutInflater) }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = inflater.inflate(R.layout.fragment_skill, container, false)!!
-
+    ) = binding.root
 }

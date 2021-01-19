@@ -1,6 +1,5 @@
 package me.sungbin.portfolio.adapter
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.NonNull
@@ -10,14 +9,12 @@ import me.sungbin.portfolio.R
 import me.sungbin.portfolio.databinding.LayoutProjectItemBinding
 import me.sungbin.portfolio.model.Project
 
-
 /**
  * Created by SungBin on 2020-07-20.
  */
 
 class ProjectItemAdapter(
-    private val items: List<Project>,
-    private val activity: Activity
+    private val items: List<Project>
 ) : RecyclerView.Adapter<ProjectItemAdapter.ViewHolder>() {
 
     class ViewHolder(private val binding: LayoutProjectItemBinding) :
@@ -29,13 +26,12 @@ class ProjectItemAdapter(
                 invalidateAll()
             }
         }
-
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int) =
         ViewHolder(
             DataBindingUtil.inflate(
-                LayoutInflater.from(activity),
+                LayoutInflater.from(viewGroup.context),
                 R.layout.layout_project_item, viewGroup, false
             )
         )

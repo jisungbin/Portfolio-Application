@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:overScrollMode="never"
@@ -14,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.sungbin.sungbintool.ui.TagableRoundImageView
+        <me.sungbin.androidutils.ui.TagableRoundImageView
             android:id="@+id/iv_profile"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -70,7 +69,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/introduce_title_age"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,8 +81,7 @@
             android:layout_marginTop="@dimen/margin_half"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_age"
-            tools:text="@string/introduce_age" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_age" />
 
         <TextView
             android:id="@+id/tv_title_email"

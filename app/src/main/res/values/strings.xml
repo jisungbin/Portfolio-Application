@@ -23,8 +23,6 @@
     <string name="introduce_name">지성빈</string>
     <string name="introduce_title_birthday">생일</string>
     <string name="introduce_birthday">2002년 12월 02일</string>
-    <string name="introduce_title_age">나이</string>
-    <string name="introduce_age">19살</string>
     <string name="introduce_title_mail">메일</string>
     <string name="introduce_mail">mail@sungbin.me</string>
     <string name="introduce_title_site">개인 사이트</string>

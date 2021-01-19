@@ -5,9 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_android.*
-import me.sungbin.portfolio.R
 import me.sungbin.portfolio.adapter.ProjectItemAdapter
+import me.sungbin.portfolio.databinding.FragmentAndroidBinding
 import me.sungbin.portfolio.model.Project
 
 
@@ -17,16 +16,18 @@ import me.sungbin.portfolio.model.Project
 
 class AndroidFragment : Fragment() {
 
+    private val binding by lazy { FragmentAndroidBinding.inflate(layoutInflater) }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = inflater.inflate(R.layout.fragment_android, container, false)!!
+    ) = binding.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        rv_dev_library.adapter = ProjectItemAdapter(
+        binding.rvDevLibrary.adapter = ProjectItemAdapter(
             listOf(
                 Project(
                     "AndroidUtils",
@@ -52,7 +53,7 @@ class AndroidFragment : Fragment() {
                     "https://github.com/sungbin5304/MusicInformator",
                     ""
                 )
-            ), requireActivity()
+            )
         )
     }
 
