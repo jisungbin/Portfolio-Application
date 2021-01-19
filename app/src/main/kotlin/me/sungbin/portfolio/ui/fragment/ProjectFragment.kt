@@ -6,17 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import me.sungbin.portfolio.adapter.ProjectItemAdapter
-import me.sungbin.portfolio.databinding.FragmentAndroidBinding
+import me.sungbin.portfolio.databinding.FragmentProjectBinding
 import me.sungbin.portfolio.model.Project
-
 
 /**
  * Created by SungBin on 2020-09-10.
  */
 
-class AndroidFragment : Fragment() {
+class ProjectFragment : Fragment() {
 
-    private val binding by lazy { FragmentAndroidBinding.inflate(layoutInflater) }
+    private val binding by lazy { FragmentProjectBinding.inflate(layoutInflater) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,7 +26,7 @@ class AndroidFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.rvDevLibrary.adapter = ProjectItemAdapter(
+        binding.rvDevProject.adapter = ProjectItemAdapter(
             listOf(
                 Project(
                     "AndroidUtils",
@@ -56,5 +55,4 @@ class AndroidFragment : Fragment() {
             )
         )
     }
-
 }

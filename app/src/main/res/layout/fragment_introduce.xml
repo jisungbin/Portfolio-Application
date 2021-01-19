@@ -1,151 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_container_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="never"
-    android:paddingStart="@dimen/margin_default"
-    android:paddingTop="@dimen/margin_default"
-    android:paddingEnd="@dimen/margin_default"
-    android:scrollbars="none">
+    android:padding="@dimen/margin_default">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
+        android:id="@+id/sv_container_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
 
-        <me.sungbin.androidutils.ui.TagableRoundImageView
-            android:id="@+id/iv_profile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@string/image_profile"
-            android:src="@drawable/profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:triv_imageRadius="99dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_title_name"
+            <me.sungbin.androidutils.ui.TagableRoundImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/image_description_profile"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:triv_imageRadius="99dp" />
+
+            <TextView
+                android:id="@+id/tv_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introduce_name_label"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_half"
+                android:text="@string/introduce_name_value"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_label" />
+
+            <TextView
+                android:id="@+id/tv_birthday_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_twice"
+                android:text="@string/introduce_birthday_label"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_value" />
+
+            <TextView
+                android:id="@+id/tv_birthday_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_half"
+                android:text="@string/introduce_birthday_value"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_birthday_label" />
+
+            <TextView
+                android:id="@+id/tv_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_twice"
+                android:text="@string/introduce_mail_label"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_birthday_value" />
+
+            <TextView
+                android:id="@+id/tv_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_half"
+                android:text="@string/introduce_mail_value"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email_label" />
+
+            <TextView
+                android:id="@+id/tv_title_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_twice"
+                android:text="@string/introduce_bio_label"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email_value" />
+
+            <TextView
+                android:id="@+id/tv_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_half"
+                android:text="@string/introduce_bio_value"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_bio" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_container_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_container_links"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/introduce_title_name"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:text="@string/introduce_name"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_name" />
+            <ImageView
+                android:id="@+id/iv_github"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_github"
+                android:scaleType="fitXY"
+                android:src="@drawable/github" />
 
-        <TextView
-            android:id="@+id/tv_title_birthday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/introduce_title_birthday"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+            <ImageView
+                android:id="@+id/iv_devblog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_devblog"
+                android:scaleType="fitXY"
+                android:src="@drawable/devles" />
 
-        <TextView
-            android:id="@+id/tv_birthday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:text="@string/introduce_birthday"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_birthday" />
+            <ImageView
+                android:id="@+id/iv_homepage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_homepage"
+                android:scaleType="fitXY"
+                android:src="@drawable/homepage" />
 
-        <TextView
-            android:id="@+id/tv_title_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_twice"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_birthday" />
+            <ImageView
+                android:id="@+id/iv_facebook"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_facebook"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook" />
 
-        <TextView
-            android:id="@+id/tv_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_age" />
+            <ImageView
+                android:id="@+id/iv_instagram"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_instagram"
+                android:scaleType="fitXY"
+                android:src="@drawable/instagram" />
 
-        <TextView
-            android:id="@+id/tv_title_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/introduce_title_mail"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+            <ImageView
+                android:id="@+id/iv_twitter"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_twitter"
+                android:scaleType="fitXY"
+                android:src="@drawable/twitter" />
 
-        <TextView
-            android:id="@+id/tv_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:text="@string/introduce_mail"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_email" />
+            <!-- youtube -->
 
-        <TextView
-            android:id="@+id/tv_title_site"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/introduce_title_site"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_site"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:text="@string/introduce_site"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_site" />
+    </HorizontalScrollView>
 
-        <TextView
-            android:id="@+id/tv_title_bio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_twice"
-            android:text="@string/introduce_title_bio"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_site" />
-
-        <TextView
-            android:id="@+id/tv_bio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_half"
-            android:text="@string/introduce_bio"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_bio" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

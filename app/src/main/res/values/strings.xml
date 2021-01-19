@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="image_profile">profile-image</string>
-    <string name="image_project_banner">project-banner</string>
+    <string name="image_description_profile">profile-image</string>
+    <string name="image_description_project_banner">project-banner</string>
 
     <string name="app_name">Portfolio</string>
 
-    <string name="main_name">Ji SungBin</string>
-    <string name="main_description">Android Programmer</string>
+    <string name="main_name">Sungbin Ji</string>
+    <string name="main_description">Android Developer</string>
     <string name="main_start">→</string>
 
     <string name="menu_introduce">프로필</string>
     <string name="menu_skill">스킬</string>
-    <string name="menu_android">개발</string>
+    <string name="menu_project">프로젝트</string>
     <string name="menu_information">정보</string>
 
-    <string name="content_profile">Profile</string>
-    <string name="content_skill">Programming Skill</string>
-    <string name="content_android">Developed</string>
-    <string name="content_information">App Information</string>
+    <string name="content_profile">😀 Profile</string>
+    <string name="content_skill">🔧 Skill</string>
+    <string name="content_project">📚 Project</string>
+    <string name="content_information">⭐ Information</string>
 
-    <string name="introduce_title_name">이름</string>
-    <string name="introduce_name">지성빈</string>
-    <string name="introduce_title_birthday">생일</string>
-    <string name="introduce_birthday">2002년 12월 02일</string>
-    <string name="introduce_title_mail">메일</string>
-    <string name="introduce_mail">mail@sungbin.me</string>
-    <string name="introduce_title_site">개인 사이트</string>
-    <string name="introduce_site">devl.es\nsungbin.me\ntwitter.com/sungbin_dev\ngithub.com/sungbin5304</string>
-    <string name="introduce_title_bio">소개</string>
-    <string name="introduce_bio">초등학교 6학년 때 자바스크립트로 프로그래밍에 입문하였고, 중학교 2학년 때 안드로이드 프로그래밍을 시작하였다.\n\n안드로이드 프로그래머를 꿈꾸고 있다.</string>
+    <string name="introduce_name_label">이름</string>
+    <string name="introduce_name_value">지성빈</string>
+    <string name="introduce_birthday_label">생일</string>
+    <string name="introduce_birthday_value">2002년 12월 02일 (%d살)</string>
+    <string name="introduce_mail_label">메일</string>
+    <string name="introduce_mail_value">mail@sungbin.me</string>
+    <string name="introduce_bio_label">소개</string>
+    <string name="introduce_bio_value">초등학교 6학년 때 자바스크립트로 프로그래밍에 입문하였다.\n이후 Android와 iOS 프로그래머가 되기 위해 항상 노력하는 프로그래머</string>
 
-    <string name="skill_title_usable_language">사용가능 언어</string>
-    <string name="skill_usable_language">자바\n코틀린💙\n자바스크립트</string>
-    <string name="skill_title_learning_language">배우고있는 언어</string>
-    <string name="skill_learning_language">Lua\nDeno\nHTML\nNode.js\nDart (Flutter)</string>
-    <string name="skill_title_dev_skill">개발 기술</string>
-    <string name="skill_dev_skill">1. ReactiveX\n ┕ RxJava\n ┕ RxKotlin\n ┕ RxRetrofit\n ┕ RxAndroid\n2. Coroutines\n3. MVVM Pattern\n4. Jetpack Compose\n5. Dependency Injection\n ┕ Hilt\n ┕ Dagger2</string>
+    <string name="skill_usable_language_label">사용가능 언어</string>
+    <string name="skill_usable_language_value">1. 자바\n2. 코틀린💙\n3. 자바스크립트</string>
+    <string name="skill_learning_language_label">배우고있는 언어</string>
+    <string name="skill_learning_language_value">1. Lua\n2. HTML/CSS\n3. Node.js\n4. Dart (Flutter)\n5. Swift</string>
+    <string name="skill_dev_skill_label">개발 기술</string>
+    <string name="skill_dev_skill_value">1. ReactiveX\n ┕ RxJava3\n ┕ RxKotlin\n ┕ RxAndroid\n2. Coroutines\n3. MVVM Pattern\n4. Jetpack Compose\n ┕ Paging\n ┕ Room\n ┕ Navigation\n5. Dependency Injection\n ┕ Hilt\n ┕ Dagger2\n6. Networking\n ┕ Retrofit2\n ┕ OkHttp3</string>
 
-    <string name="project_preview_name">DevLes</string>
-    <string name="project_preview_description">개인 풀스택 제작 개발 블로그</string>
-    <string name="project_dev_android">개발 프로젝트</string>
+    <string name="project_name_preview">DevLes</string>
+    <string name="project_description_preview">개인 개발 블로그</string>
+    <string name="image_description_github">image-github</string>
+    <string name="image_description_devblog">image-devblog</string>
+    <string name="image_description_homepage">homepage</string>
+    <string name="image_description_facebook">image-facebook</string>
+    <string name="image_description_instagram">image-instagram</string>
+    <string name="image_description_twitter">image-twitter</string>
 
 </resources>

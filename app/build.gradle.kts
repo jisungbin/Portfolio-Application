@@ -60,7 +60,6 @@ dependencies {
 
     def(
         Dependencies.Essential.AppCompat,
-        Dependencies.Essential.Anko,
         Dependencies.Essential.Kotlin,
 
         Dependencies.Ktx.Core,

@@ -5,9 +5,11 @@ import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import me.sungbin.androidutils.annotation.Intentable
 import me.sungbin.portfolio.R
 import me.sungbin.portfolio.databinding.ActivityContentBinding
 
+@Intentable
 class ContentActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityContentBinding.inflate(layoutInflater) }
@@ -19,7 +21,7 @@ class ContentActivity : AppCompatActivity() {
         binding.tvHello.text = when (controller.currentDestination?.id) {
             R.id.introduce -> getString(R.string.content_profile)
             R.id.skill -> getString(R.string.content_skill)
-            R.id.android -> getString(R.string.content_android)
+            R.id.android -> getString(R.string.content_project)
             else -> getString(R.string.content_information) // R.id.info
         }
     }
@@ -45,5 +47,4 @@ class ContentActivity : AppCompatActivity() {
         navController.removeOnDestinationChangedListener(listener)
         super.onPause()
     }
-
 }

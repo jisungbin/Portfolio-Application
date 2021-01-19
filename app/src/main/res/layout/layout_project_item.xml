@@ -8,83 +8,78 @@
         <variable
             name="project"
             type="me.sungbin.portfolio.model.Project" />
-
     </data>
 
-    <LinearLayout
-        android:orientation="vertical"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="265dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/margin_default">
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:cardBackgroundColor="@color/colorWhite"
-            app:cardCornerRadius="@dimen/margin_twice">
+            android:layout_height="match_parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ImageView
+                android:id="@+id/iv_banner"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="180dp"
+                android:contentDescription="@string/image_description_project_banner"
+                android:scaleType="fitXY"
+                app:image="@{project.bannerImageLink}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/devles" />
 
-                <ImageView
-                    android:id="@+id/iv_banner"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:contentDescription="@string/image_project_banner"
-                    android:scaleType="fitXY"
-                    app:image="@{project.bannerImageLink}"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@drawable/devles" />
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorTwiceLightGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_banner" />
 
-                <View
-                    android:id="@+id/view_line"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorTwiceLightGray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_banner" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_half"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_line">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_project_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_default"
-                    android:layout_marginEnd="@dimen/margin_default"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view_line">
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@{project.name}"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="@string/project_name_preview" />
 
-                    <TextView
-                        android:id="@+id/tv_project_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:marqueeRepeatLimit="marquee_forever"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="@{project.name}"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/project_preview_name" />
+                <TextView
+                    android:id="@+id/tv_project_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_twice_half"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@{project.description}"
+                    tools:text="@string/project_description_preview" />
 
-                    <TextView
-                        android:id="@+id/tv_project_description"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:marqueeRepeatLimit="marquee_forever"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="@{project.description}"
-                        tools:text="@string/project_preview_description" />
+            </LinearLayout>
 
-                </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </layout>

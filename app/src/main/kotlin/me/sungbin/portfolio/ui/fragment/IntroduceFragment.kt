@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import me.sungbin.portfolio.databinding.FragmentIntroduceBinding
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Date
+import java.util.Locale
+import me.sungbin.portfolio.R
+import me.sungbin.portfolio.databinding.FragmentIntroduceBinding
 
 /**
  * Created by SungBin on 2020-09-10.
@@ -29,5 +31,6 @@ class IntroduceFragment : Fragment() {
         val format = SimpleDateFormat("yyyy", Locale.KOREA)
         val year = format.format(Date()).toInt()
         val age = year - 2002 + 1
+        binding.tvBirthdayValue.text = getString(R.string.introduce_birthday_value, age)
     }
 }

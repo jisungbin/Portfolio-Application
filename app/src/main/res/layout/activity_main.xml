@@ -22,7 +22,7 @@
         app:lottie_renderMode="software" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_name_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_twice_and_half"
@@ -41,9 +41,9 @@
         android:text="@string/main_description"
         android:textColor="@color/colorWhite"
         android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_name"
-        app:layout_constraintStart_toStartOf="@+id/tv_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_value"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_value" />
 
     <TextView
         android:id="@+id/btn_start"
