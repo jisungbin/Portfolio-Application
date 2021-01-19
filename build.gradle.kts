@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:4.1.0")
+        classpath("com.android.tools.build:gradle:${Versions.Essential.Gradle}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.Essential.Kotlin}")
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.Jetpack.Navigation}")
     }
@@ -20,6 +20,6 @@ allprojects {
     }
 }
 
-tasks.register("clean", Delete::class){
+tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }

@@ -5,7 +5,7 @@ object Application {
     const val targetSdk = 30
     const val compileSdk = 30
     const val jvmTarget = "1.8"
-    const val versionCode = 5
+    const val versionCode = 6
     const val versionName = "1.0.0"
 
     val targetCompat = JavaVersion.VERSION_1_8
@@ -16,31 +16,31 @@ object Versions {
     object Essential {
         const val AppCompat = "1.2.0"
         const val Anko = "0.10.8"
-        const val Kotlin = "1.4.10"
-        const val Gradle = "4.0.2"
+        const val Kotlin = "1.4.30-RC"
+        const val Gradle = "4.1.1"
     }
 
     object Ktx {
         const val Core = "1.3.2"
-        const val Fragment = "2.3.0"
+        const val Fragment = "2.3.2"
     }
 
     object Jetpack {
-        const val Navigation = "2.3.0"
+        const val Navigation = "2.3.2"
     }
 
     object Ui {
         const val ReflowAnimator = "1.0.0-SNAPSHOT"
         const val SmoothBottomBar = "1.7.6"
-        const val Lottie = "3.4.4"
+        const val Lottie = "3.6.0"
         const val Material = "1.2.1"
         const val Glide = "4.11.0"
         const val CardView = "1.0.0"
-        const val ConstraintLayout = "2.0.2"
+        const val ConstraintLayout = "2.0.4"
     }
 
     object Util {
-        const val AndroidUtils = "4.0.3"
+        const val AndroidUtils = "5.0.1"
         const val CarshReporter = "1.1.0"
     }
 }
@@ -76,7 +76,10 @@ object Dependencies {
 
     object Util {
         const val GlideCompiler = "com.github.bumptech.glide:compiler:${Versions.Ui.Glide}"
-        const val AndroidUtils = "com.github.sungbin5304:SBT:${Versions.Util.AndroidUtils}"
+        const val AndroidUtils =
+            "com.github.sungbin5304.androidutils:androidutils:${Versions.Util.AndroidUtils}"
+        const val AndroidUtilsCompiler =
+            "com.github.sungbin5304.androidutils:compiler:${Versions.Util.AndroidUtils}"
         const val CrashReporter =
             "com.balsikandar.android:crashreporter:${Versions.Util.CarshReporter}"
     }

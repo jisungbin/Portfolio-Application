@@ -1,8 +1,7 @@
 plugins {
     id("com.android.application")
-    id("name.remal.check-dependency-updates") version "1.1.0"
+    id("name.remal.check-dependency-updates") version "1.2.2"
     kotlin("android")
-    kotlin("android.extensions")
     kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
 }
@@ -20,6 +19,7 @@ android {
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 
     buildTypes {
@@ -81,4 +81,5 @@ dependencies {
     )
 
     kapt(Dependencies.Util.GlideCompiler)
+    kapt(Dependencies.Util.AndroidUtilsCompiler)
 }
