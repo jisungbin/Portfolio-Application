@@ -67,9 +67,9 @@ dependencies {
         Dependencies.Ktx.NavigationFragment,
         Dependencies.Ktx.Fragment,
 
-        Dependencies.Ui.ReflowAnimator,
         Dependencies.Ui.SmoothBottomBar,
         Dependencies.Ui.Lottie,
+        Dependencies.Ui.Browser,
         Dependencies.Ui.Material,
         Dependencies.Ui.Glide,
         Dependencies.Ui.CardView,
