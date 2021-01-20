@@ -8,6 +8,7 @@
     <string name="image_description_twitter">image-twitter</string>
     <string name="image_description_profile">profile-image</string>
     <string name="image_description_project_banner">project-banner</string>
+    <string name="image_description_youtube">image-youtube</string>
 
     <string name="app_name">Portfolio</string>
 

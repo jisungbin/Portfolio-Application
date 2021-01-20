@@ -186,7 +186,15 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/twitter" />
 
-            <!-- youtube -->
+            <ImageView
+                android:id="@+id/iv_youtube"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/margin_half"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:contentDescription="@string/image_description_youtube"
+                android:scaleType="fitXY"
+                android:src="@drawable/youtube" />
 
         </LinearLayout>
 

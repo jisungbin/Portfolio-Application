@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import me.sungbin.portfolio.R
 import me.sungbin.portfolio.databinding.LayoutProjectItemBinding
 import me.sungbin.portfolio.model.Project
+import me.sungbin.portfolio.util.Util
 
 /**
  * Created by SungBin on 2020-07-20.
@@ -21,10 +22,11 @@ class ProjectItemAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bindViewHolder(project: Project) {
-            with(binding) {
-                this.project = project
-                invalidateAll()
+            binding.project = project
+            binding.root.setOnClickListener {
+                Util.openTab(binding.root.context, project.link)
             }
+            binding.invalidateAll()
         }
     }
 

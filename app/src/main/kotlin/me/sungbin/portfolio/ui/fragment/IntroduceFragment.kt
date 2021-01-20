@@ -54,5 +54,11 @@ class IntroduceFragment : Fragment() {
         binding.ivInstagram.setOnClickListener {
             Util.openTab(requireContext(), "https://www.instagram.com/sungbin__5304/")
         }
+        binding.ivYoutube.setOnClickListener {
+            Util.openTab(
+                requireContext(),
+                "https://www.youtube.com/channel/UChubzljAKmAZQ65VFyR7cYA"
+            )
+        }
     }
 }
