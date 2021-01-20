@@ -21,7 +21,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/iv_banner"
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/margin_half"
+                android:padding="@dimen/margin_default"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view_line">
 
@@ -70,9 +70,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_twice_half"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:maxLines="1"
-                    android:singleLine="true"
                     android:text="@{project.description}"
                     tools:text="@string/project_description_preview" />
 

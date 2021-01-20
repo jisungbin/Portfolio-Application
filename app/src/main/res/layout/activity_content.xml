@@ -6,15 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundWhite">
 
-    <TextView
-        android:id="@+id/tv_hello"
+    <TextSwitcher
+        android:id="@+id/ts_title"
+        style="@style/ContentTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
-        android:clipChildren="false"
-        android:textColor="@color/colorBlack"
-        android:textSize="25sp"
-        android:paddingTop="@dimen/margin_twice_half"
         app:layout_constraintBottom_toTopOf="@+id/fcv_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +26,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cv_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hello"
+        app:layout_constraintTop_toBottomOf="@+id/ts_title"
         app:navGraph="@navigation/nav_main" />
 
     <androidx.cardview.widget.CardView

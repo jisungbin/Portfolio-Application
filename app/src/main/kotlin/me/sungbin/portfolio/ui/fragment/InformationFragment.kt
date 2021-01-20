@@ -11,7 +11,6 @@ import me.sungbin.portfolio.databinding.FragmentInfomationBinding
  */
 
 class InformationFragment : Fragment() {
-
     private val binding by lazy { FragmentInfomationBinding.inflate(layoutInflater) }
 
     override fun onCreateView(

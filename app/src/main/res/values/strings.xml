@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="image_description_github">image-github</string>
+    <string name="image_description_devblog">image-devblog</string>
+    <string name="image_description_homepage">homepage</string>
+    <string name="image_description_facebook">image-facebook</string>
+    <string name="image_description_instagram">image-instagram</string>
+    <string name="image_description_twitter">image-twitter</string>
     <string name="image_description_profile">profile-image</string>
     <string name="image_description_project_banner">project-banner</string>
 
@@ -37,11 +43,5 @@
 
     <string name="project_name_preview">DevLes</string>
     <string name="project_description_preview">개인 개발 블로그</string>
-    <string name="image_description_github">image-github</string>
-    <string name="image_description_devblog">image-devblog</string>
-    <string name="image_description_homepage">homepage</string>
-    <string name="image_description_facebook">image-facebook</string>
-    <string name="image_description_instagram">image-instagram</string>
-    <string name="image_description_twitter">image-twitter</string>
 
 </resources>
