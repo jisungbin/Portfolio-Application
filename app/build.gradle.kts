@@ -14,7 +14,6 @@ android {
         versionCode = Application.versionCode
         versionName = Application.versionName
         multiDexEnabled = true
-        setProperty("archivesBaseName", "v$versionName ($versionCode)")
     }
 
     buildFeatures {
@@ -71,6 +70,7 @@ dependencies {
         Dependencies.Ui.Lottie,
         Dependencies.Ui.Browser,
         Dependencies.Ui.Material,
+        Dependencies.Ui.Flexbox,
         Dependencies.Ui.Glide,
         Dependencies.Ui.CardView,
         Dependencies.Ui.ConstraintLayout,

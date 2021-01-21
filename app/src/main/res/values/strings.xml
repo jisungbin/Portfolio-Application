@@ -2,15 +2,18 @@
 <resources>
     <string name="image_description_github">image-github</string>
     <string name="image_description_devblog">image-devblog</string>
-    <string name="image_description_homepage">homepage</string>
+    <string name="image_description_homepage">image-homepage</string>
     <string name="image_description_facebook">image-facebook</string>
     <string name="image_description_instagram">image-instagram</string>
     <string name="image_description_twitter">image-twitter</string>
-    <string name="image_description_profile">profile-image</string>
+    <string name="image_description_profile">image-profile</string>
     <string name="image_description_project_banner">project-banner</string>
     <string name="image_description_youtube">image-youtube</string>
+    <string name="image_description_icon">image-icon</string>
+    <string name="image_description_mad_score">image-mad-score</string>
+    <string name="image_description_zmobot_qrcode">image-zmobot-qrcode</string>
 
-    <string name="app_name">Portfolio</string>
+    <string name="app_name">SungBin</string>
 
     <string name="main_name">Sungbin Ji</string>
     <string name="main_description">Android Developer</string>
@@ -33,7 +36,7 @@
     <string name="introduce_mail_label">메일</string>
     <string name="introduce_mail_value">mail@sungbin.me</string>
     <string name="introduce_bio_label">소개</string>
-    <string name="introduce_bio_value">초등학교 6학년 때 자바스크립트로 프로그래밍에 입문하였다.\n이후 Android와 iOS 프로그래머가 되기 위해 항상 노력하는 프로그래머</string>
+    <string name="introduce_bio_value">초등학교 6학년 때 자바스크립트로 프로그래밍에 입문하였다.\n\n이후 Android와 iOS 프로그래머가 되기 위해 항상 노력하는 개발자.\n\n또한 즈모봇 이라는 카카오톡 봇 서비스를 운영하고 있다.</string>
 
     <string name="skill_usable_language_label">사용가능 언어</string>
     <string name="skill_usable_language_value">1. 자바\n2. 코틀린💙\n3. 자바스크립트</string>
@@ -44,5 +47,17 @@
 
     <string name="project_name_preview">DevLes</string>
     <string name="project_description_preview">개인 개발 블로그</string>
+
+    <string name="information_description">웹 만들기가 너무 어려워서\n그냥 포기하고 앱으로 만든 포트폴리오</string>
+    <string name="information_copyright">© 2021 Sungbin Ji. all rights reserved.</string>
+    <string name="information_opensource_license">오픈소스 라이선스</string>
+    <string name="information_mad_score">MAD-Score</string>
+    <string name="information_dev_time">개발 시간</string>
+    <string name="information_question">\?</string>
+    <string name="information_github">깃허브</string>
+    <string name="information_use_zmobot">즈모봇 써보기</string>
+
+    <string name="dialog_zmobot_description">즈모봇이란,\n사용자 편의를 위해 제공되는\n카카오톡 봇 서비스 입니다.</string>
+    <string name="dialog_zmobot_add_friend">왼쪽 카카오톡 QR코드 또는\n아이디 sungbinyee 친구추가로\n즈모봇을 이용하실 수 있습니다.</string>
 
 </resources>

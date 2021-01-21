@@ -14,7 +14,6 @@ import me.sungbin.portfolio.databinding.ActivityContentBinding
 
 @Intentable
 class ContentActivity : AppCompatActivity() {
-
     private val binding by lazy { ActivityContentBinding.inflate(layoutInflater) }
     private val navController by lazy {
         (supportFragmentManager.findFragmentById(R.id.fcv_container) as NavHostFragment).navController

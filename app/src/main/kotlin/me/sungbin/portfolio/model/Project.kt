@@ -4,7 +4,6 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import me.sungbin.portfolio.module.GlideApp
 
-
 /**
  * Created by SungBin on 2020-10-15.
  */

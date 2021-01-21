@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/introduce"
-        android:icon="@drawable/sdb_navigation_emoji"
-        android:title="@string/menu_introduce"/>
+        android:icon="@drawable/ic_outline_emoji_emotions_24"
+        android:title="@string/menu_introduce" />
 
     <item
         android:id="@+id/skill"
-        android:icon="@drawable/sdb_navigation_whatshot"
-        android:title="@string/menu_skill"/>
+        android:icon="@drawable/ic_outline_whatshot_24"
+        android:title="@string/menu_skill" />
 
     <item
         android:id="@+id/android"
-        android:icon="@drawable/sdb_navigation_project"
+        android:icon="@drawable/ic_baseline_android_24"
         android:title="@string/menu_project" />
 
     <item
         android:id="@+id/info"
-        android:icon="@drawable/sdb_navigation_info"
-        android:title="@string/menu_information"/>
+        android:icon="@drawable/ic_outline_info_24"
+        android:title="@string/menu_information" />
 
 </menu>

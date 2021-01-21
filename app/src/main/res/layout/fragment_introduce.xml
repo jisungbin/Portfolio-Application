@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <me.sungbin.androidutils.ui.TagableRoundImageView
+            <me.sungbin.androidutils.ui.tagableroundimageview.TagableRoundImageView
                 android:id="@+id/iv_profile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"

@@ -5,8 +5,8 @@ object Application {
     const val targetSdk = 30
     const val compileSdk = 30
     const val jvmTarget = "1.8"
-    const val versionCode = 6
-    const val versionName = "1.0.0"
+    const val versionCode = 1
+    const val versionName = "코로나 종식되게 해주세요"
 
     val targetCompat = JavaVersion.VERSION_1_8
     val sourceCompat = JavaVersion.VERSION_1_8
@@ -29,6 +29,7 @@ object Versions {
     }
 
     object Ui {
+        const val Flexbox = "2.0.1"
         const val Browser = "1.3.0"
         const val SmoothBottomBar = "1.7.6"
         const val Lottie = "3.6.0"
@@ -39,7 +40,7 @@ object Versions {
     }
 
     object Util {
-        const val AndroidUtils = "5.0.1"
+        const val AndroidUtils = "5.1.3"
         const val CarshReporter = "1.1.0"
     }
 }
@@ -60,6 +61,7 @@ object Dependencies {
     }
 
     object Ui {
+        const val Flexbox = "com.google.android:flexbox:${Versions.Ui.Flexbox}"
         const val Browser = "androidx.browser:browser:${Versions.Ui.Browser}"
         const val SmoothBottomBar =
             "com.github.ibrahimsn98:SmoothBottomBar:${Versions.Ui.SmoothBottomBar}"
@@ -74,9 +76,9 @@ object Dependencies {
     object Util {
         const val GlideCompiler = "com.github.bumptech.glide:compiler:${Versions.Ui.Glide}"
         const val AndroidUtils =
-            "com.github.sungbin5304.androidutils:androidutils:${Versions.Util.AndroidUtils}"
+            "com.github.sungbin5304.SBT:androidutils:${Versions.Util.AndroidUtils}"
         const val AndroidUtilsCompiler =
-            "com.github.sungbin5304.androidutils:compiler:${Versions.Util.AndroidUtils}"
+            "com.github.sungbin5304.SBT:compiler:${Versions.Util.AndroidUtils}"
         const val CrashReporter =
             "com.balsikandar.android:crashreporter:${Versions.Util.CarshReporter}"
     }

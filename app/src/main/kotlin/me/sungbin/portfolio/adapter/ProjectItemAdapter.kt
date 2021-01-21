@@ -17,7 +17,6 @@ import me.sungbin.portfolio.util.Util
 class ProjectItemAdapter(
     private val items: List<Project>
 ) : RecyclerView.Adapter<ProjectItemAdapter.ViewHolder>() {
-
     class ViewHolder(private val binding: LayoutProjectItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
